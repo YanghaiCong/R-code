@@ -48,7 +48,7 @@ setwd(old.dir)
 #### 4: Vectors
 #### 5: Missing Values
 #### 6: Subsetting Vectors
-#### 7:Matrices and Data Frames
+#### 7: Matrices and Data Frames
 #### 8: Logic
 #### 9: Functions
 #### 10: lapply and sapply
