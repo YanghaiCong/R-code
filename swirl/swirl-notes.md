@@ -50,6 +50,33 @@ setwd(old.dir)
 #### 6: Subsetting Vectors
 #### 7: Matrices and Data Frames
 #### 8: Logic
+
+> 6 == 7
+
+> !TRUE
+
+> TRUE & c(TRUE, FALSE, FALSE)
+
+> TRUE && c(TRUE, FALSE, FALSE)
+
+> isTRUE(TRUE)
+
+> identical('twins','twins')
+
+> xor(TRUE, FALSE) # TRUE
+
+> xor(TRUE, TRUE) # FASLE
+
+> xor(FALSE, FALSE) # FALSE
+
+> 8 == 8.0 # TRUE
+
+> which(c(TRUE, FALSE, TRUE, FALSE))
+
+> any(c(TRUE, FALSE, TRUE, FALSE))
+
+> all(c(TRUE, FALSE, TRUE, FALSE))
+
 #### 9: Functions
 #### 10: lapply and sapply
 #### 11: vapply and tapply
