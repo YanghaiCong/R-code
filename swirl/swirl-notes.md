@@ -80,9 +80,7 @@ setwd(old.dir)
 #### 9: Functions
 
 > boring_function <- function(x){
-
 >   x
-
 > }
 
 
@@ -103,9 +101,7 @@ or as:
 
 
 > evaluate <- function(func, dat){
-
 >   func(dat)
-
 > }
 
 argument "func" is a function
@@ -114,9 +110,7 @@ paste("Programming", "is", "fun!")
 
 
 > telegram <- function(...){
-
 >   paste("START", ..., "STOP")
-
 > }
 
 using "..." (ellipses) as argument
@@ -144,9 +138,7 @@ using "..." as argument, and using list to host the arguments
 
 
 > "%p%" <- function(first, second){
-
 >   paste(first, second)
-
 > }
 
 > "I" %p% "love" %p% "R!"
