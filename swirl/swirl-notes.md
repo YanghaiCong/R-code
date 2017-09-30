@@ -86,9 +86,7 @@ setwd(old.dir)
 
 
 > remainder <- function(num, divisor=2){
-
 >   num%%divisor
-
 > }
 
 argument "divisor" has a default value, so it can be used as:
@@ -105,6 +103,8 @@ or as:
 > }
 
 argument "func" is a function
+
+> evaluate(mean,c(1,2,3,4,5))
 
 paste("Programming", "is", "fun!")
 
