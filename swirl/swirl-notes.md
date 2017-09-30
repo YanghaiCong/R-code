@@ -46,6 +46,9 @@ setwd(old.dir)
 
 #### 3: Sequences of Numbers
 #### 4: Vectors
+
+Done!
+
 #### 5: Missing Values
 
 Type 1
@@ -173,3 +176,22 @@ using "..." as argument, and using list to host the arguments
 #### Others
 
 > sample(c(1,3,24,12,4),3) # sampling three items from c(1,3,24,12,4)
+
+> paste(arg1,arg2,..., sep=" ", collapse=NULL)
+
+"collapse" tells you if you want to paste all the string into ONE
+
+arg1, arg2, ... will parallelly be pasted together! like this:
+
+arg1 arg2
+1    a
+
+2    b
+
+3    c
+
+4    d
+
+
+
+
