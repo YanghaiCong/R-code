@@ -78,6 +78,79 @@ setwd(old.dir)
 > all(c(TRUE, FALSE, TRUE, FALSE))
 
 #### 9: Functions
+
+> boring_function <- function(x){
+
+>   x
+
+> }
+
+
+
+> remainder <- function(num, divisor=2){
+
+>   num%%divisor
+
+> }
+
+argument "divisor" has a default value, so it can be used as:
+
+> remainder(num = 11)
+
+or as:
+
+> remainder(num = 11, divisor = 3)
+
+
+> evaluate <- function(func, dat){
+
+>   func(dat)
+
+> }
+
+argument "func" is a function
+
+paste("Programming", "is", "fun!")
+
+
+> telegram <- function(...){
+
+>   paste("START", ..., "STOP")
+
+> }
+
+using "..." (ellipses) as argument
+
+> telegram("Hi, there")
+
+
+> mad_libs <- function(...){
+
+>   args <-list(...)
+
+>   place <- args[["place"]]
+
+>   adjective <- args[["adjective"]]
+
+>   noun <- args[["noun"]]
+
+>   paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
+
+> }
+
+using "..." as argument, and using list to host the arguments
+
+> mad_libs(place = "Shijiazhuang", adjective = "funny", noun = "dog")
+
+
+> "%p%" <- function(first, second){
+
+>   paste(first, second)
+
+> }
+
+> "I" %p% "love" %p% "R!"
+
 #### 10: lapply and sapply
 #### 11: vapply and tapply
 #### 12: looking at Data
