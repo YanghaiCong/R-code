@@ -45,6 +45,22 @@ Write the path of folder system
 setwd(old.dir)
 
 #### 3: Sequences of Numbers
+
+> 1:10
+
+> seq(0,10,b = 2)
+
+> rep(0, times = 10)
+
+> rep(c(0,1,2), times=10)
+
+[1] 0 1 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 2
+
+> rep(c(0,1,2),each=10)
+
+[1] 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2
+
+
 #### 4: Vectors
 
 Done!
