@@ -47,6 +47,24 @@ setwd(old.dir)
 #### 3: Sequences of Numbers
 #### 4: Vectors
 #### 5: Missing Values
+
+Type 1
+
+> NA == NA
+
+[1] NA (Not Available)
+
+Type 2
+
+> Inf-Inf
+
+or
+
+> Inf/Inf
+
+[1] NaN (Not a Number)
+
+
 #### 6: Subsetting Vectors
 #### 7: Matrices and Data Frames
 #### 8: Logic
@@ -151,3 +169,7 @@ using "..." as argument, and using list to host the arguments
 #### 15: Base Graphics
 
 
+
+#### Others
+
+> sample(c(1,3,24,12,4),3) # sampling three items from c(1,3,24,12,4)
