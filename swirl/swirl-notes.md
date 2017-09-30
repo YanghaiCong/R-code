@@ -105,6 +105,19 @@ or
 > vect[c("bar","norf")]
 
 #### 7: Matrices and Data Frames
+
+> my_vector<-1:20
+
+> dim(my_vector)<-c(4,5)
+
+> class(my_vector)
+
+> my_matrix<-matrix(data=1:20,nrow=4,ncol=5)
+
+> my_data<-data.frame(Patient=c("Two","Gina","Kelly"),Test=c(0,3,1))
+
+> class(my_data)
+
 #### 8: Logic
 
 > 6 == 7
