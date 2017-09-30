@@ -85,6 +85,25 @@ or
 
 
 #### 6: Subsetting Vectors
+
+> x[is.na(x)]
+
+> x[!is.na(x)]
+
+> x[which(is.na(x))]
+
+> x[x>0]
+
+> x[c(1,3,5)]
+
+> vect<-c(foo=1,bar=2,norf=3)
+
+> names(vect)
+
+> vect["foo"]
+
+> vect[c("bar","norf")]
+
 #### 7: Matrices and Data Frames
 #### 8: Logic
 
