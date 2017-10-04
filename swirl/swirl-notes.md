@@ -268,6 +268,13 @@ The above line returns the second element in each row (the function is a self-de
 
 #### 11: vapply and tapply
 
+> vapply(flags,unique,numeric(1))
+
+for the above command, if the numbers of items in each vector are the same, then 
+
+> vapply(flags,class,character(1))
+
+
 
 #### 12: looking at Data
 #### 13: Simulation
