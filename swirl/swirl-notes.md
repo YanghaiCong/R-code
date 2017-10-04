@@ -213,7 +213,62 @@ using "..." as argument, and using list to host the arguments
 > "I" %p% "love" %p% "R!"
 
 #### 10: lapply and sapply
+
+Each of the Xapply functions will SPLIT up some data into smaller pieces, APPLY a function to each piece, then COMBINE the results.
+
+| The lapply() function takes a list as input, applies a function to each
+| element of the list, then returns a list of the same length as the original
+| one. Since a data frame is really just a list of vectors (you can see this
+| with as.list(flags)), we can use lapply() to apply the class() function to
+| each column of the flags dataset.
+
+> cls_list <- lapply(flags,class)
+
+The above command will reture a list containing the classes of each column in dataframe flags
+
+> as.character(cls_list)
+
+The above command will transform the list into a vector
+
+> cls_vect<-sapply(flags,class)
+
+The above command will return a "s"implied version the lapply function, in this case, it will be a vector
+
+> lapply(flag_colors,sum)
+
+> lapply(flag_colors,mean)
+
+The above two lines return lists
+
+> sapply(flag_colors,sum)
+
+> sapply(flag_colors,mean)
+
+The above two lines return vectors
+
+> shape_mat<-lapply(flag_shapes, range)
+
+The above line returns a list
+
+> shape_mat<-sapply(flag_shapes, range)
+
+The above line returns a matrix
+
+> unique_vals<-lapply(flags,unique)
+
+The above line returns a list
+
+> unique_vals<-sapply(flags,unique)
+
+The above line returns a matrix (the result cannot be further simplied)
+
+> lapply(unique_vals,function(elem) elem[2])
+
+The above line returns the second element in each row (the function is a self-defined function)
+
 #### 11: vapply and tapply
+
+
 #### 12: looking at Data
 #### 13: Simulation
 #### 14: Dates and Times
