@@ -387,25 +387,50 @@ In probability theory, the central limit theorem (CLT) establishes that, in most
 | seconds since 1970-01-01 (for 'POSIXct') or a list of
 | seconds, minutes, hours, etc. (for 'POSIXlt').
 
-> 
+> Syt.Date()
 
-> 
+The above command will get you the date of today. The class is "Date".
 
-> 
+> unclass(Sys.Date())
 
-> 
+The above command will get you the days since 1970-01-01 
 
-> 
+> as.Date("1969-01-01")
 
-> 
+The above line will transform the string into "Date" format
 
-> 
+> Sys.time()
 
-> 
+The format of the returned value of above command is "POSIXct". It is the number of seconds since 1970
 
-> 
+> as.POSIXlt(Sys.time())
 
-> 
+The format of the returned value of above command is "POSIXls". It is a list.
+
+> unclass(as.POSIXlt(Sys.time()))
+
+The command will get you a list
+
+> str(unclass(as.POSIXlt(Sys.time())))
+
+shows you a good view of the Syt.time
+
+> weekdays(Sys.time())
+
+> months(Sys.Date)
+
+> quarters(Sys.Date())
+
+> t3<-"October 17, 1986 08:24"
+
+> t4<-strptime(t3, "%B %d, %Y %H:%M")
+
+The above two lines will transform the string into a "date" format
+
+> difftime(Sys.time(),t1,units="days")
+
+shows you number of days between now and the time in "t1"
+
 #### 15: Base Graphics
 
 
