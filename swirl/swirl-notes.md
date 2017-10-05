@@ -433,13 +433,17 @@ shows you number of days between now and the time in "t1"
 
 #### 15: Base Graphics
 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
+> plot(x=cars$speed,cars$dist)
+
+The above command will give the (scatter)plot
+
+> plot(x=cars$speed,cars$dist,xlab="Speed",ylab="Stopping Distance",main="My plot", sub="My sub-title", col=2, xlim=c(10,15),pch=2)
+
+Adding some features
+
+> boxplot(formula=mpg~cyl, data=mtcars)
+
+> hist(mtcars$mpg)
 
 #### Others
 
