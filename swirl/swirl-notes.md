@@ -340,10 +340,47 @@ show the distribution of the charactor/factor vector column "column"
 
 show the structure of ...
 
-#### 13: Simulation
+#### 13: Simulation (random number generation)
 
+> sample(1:6,4,replace=TRUE) 
+
+roll a dice for 4 times
+
+> sample(LETTERS)
+
+rearrange the order of letters in LETTERS
+
+> rbinom(n=1, size=100, prob=0.7) 
+
+Binomial Distribution: the above command will return one value
+A binomial random variable represents the number of 'successes' (heads) in a given number of independent 'trials' (coin flips).
+
+> rbinom(n=100, size=1, prob=0.7)
+
+Binomail Distribution: the above command will return a vector with 100 numbers
+
+> rnorm(10)
+
+gets 10 normal distributed numbers with mean = 0,  deviation =1
+
+> rnorm(n=10, mean=100,sd=25)
+
+> rpois(n=5, lambda=10)
+
+gets 5 random poison distributed number with mean = 10
+
+> my_pois<-replicate(100,rpois(5,10))
+
+> cm<-colMeans(my_pois)
+
+> hist(cm)
+
+"cm" follows a normal distribution: it is because of CLT
+In probability theory, the central limit theorem (CLT) establishes that, in most situations, when independent random variables are added, their properly normalized sum tends toward a normal distribution (a bell curve) even if the original variables themselves are not normally distributed. 
 
 #### 14: Dates and Times
+
+
 #### 15: Base Graphics
 
 
