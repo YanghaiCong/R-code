@@ -387,6 +387,25 @@ In probability theory, the central limit theorem (CLT) establishes that, in most
 | seconds since 1970-01-01 (for 'POSIXct') or a list of
 | seconds, minutes, hours, etc. (for 'POSIXlt').
 
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
 #### 15: Base Graphics
 
 
