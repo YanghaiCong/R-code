@@ -270,11 +270,21 @@ The above line returns the second element in each row (the function is a self-de
 
 > vapply(flags,unique,numeric(1))
 
-for the above command, if the numbers of items in each vector are the same, then 
+for the above command, if the numbers of items in each vector a1re the same, then 
 
 > vapply(flags,class,character(1))
 
+the above command will return a vector for sure
 
+vapply needs you to specify the returned value: vapply is similar to sapply, but has a pre-specified type of return value, so it can be safer (and sometimes faster) to use.
+
+> tapply(my_dataframe$x,my_dataframe$group,mean)
+
+tapply: apply a function to each cell of a grouped array, that is to each group of values given by a unique combination of the levels of certain factors.
+
+Usage: tapply(X, grouping factor, FUN = NULL)
+
+Apply a function to each cell of a ragged array, that is to each (non-empty) group of values given by a unique combination of the levels of certain factors.
 
 #### 12: looking at Data
 #### 13: Simulation
