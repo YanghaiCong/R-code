@@ -287,7 +287,62 @@ Usage: tapply(X, grouping factor, FUN = NULL)
 Apply a function to each cell of a ragged array, that is to each (non-empty) group of values given by a unique combination of the levels of certain factors.
 
 #### 12: looking at Data
+
+> ls()
+
+list all the objects in the working environment
+
+> class(plants)
+
+show class of object "plants"
+
+> dim(plants)
+
+show dimension of object "plants"
+
+> nrow(plants)
+
+show number of rows of object "plants"
+
+> ncol(plants)
+
+show number of columns of object "plants"
+
+> object.size(plants)
+
+show how much space the plants is occupying in memory
+
+> names(plants)
+
+show the column names
+
+> head(plants)
+
+> head(plants, 10)
+
+show the top 6 or 10 lines of the object "plants"
+
+> tail(plants)
+
+> tail(plants)
+
+show the bottom 6 or 10 lines of the object "plants"
+
+> summary(plants)
+
+summarize each columns
+
+> table(plants$column_1)
+
+show the distribution of the charactor/factor vector column "column"
+
+> str(plants)
+
+show the structure of ...
+
 #### 13: Simulation
+
+
 #### 14: Dates and Times
 #### 15: Base Graphics
 
