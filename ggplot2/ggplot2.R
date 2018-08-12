@@ -50,18 +50,24 @@ g1 <- g + coord_cartesian(xlim=c(0,0.1), ylim=c(0, 1000000))  # zooms in
 plot(g1)
 
 # 4. How to Change the Title and Axis Labels
+
 # 5. How to Change the Color and Size of Points
 #   Change the Color and Size To Static
+
 #   Change the Color To Reflect Categories in Another Column
+
 # 6. How to Change the X Axis Texts and Ticks Location
 #   Change the X and Y Axis Text and its Location?
+
 #   Write Customized Texts for Axis Labels, by Formatting the Original Values?
+
 #   Customize the Entire Theme in One Shot using Pre-Built Themes?
 
 
 
 # Part 2: Customizing the Look and Feel
 # is about more advanced customization like manipulating legend, annotations, multiplots with faceting and custom layouts
+
 
 # Part 3: Top 50 Ggplot2 Visualizations 
 # The Master List, applies what was learnt in part 1 and 2 to construct other types of ggplots such as bar charts, boxplots etc.
